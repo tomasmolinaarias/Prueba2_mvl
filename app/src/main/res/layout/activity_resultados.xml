@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Resultados">
+
+    <TextView
+        android:id="@+id/tvRut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rut: xx.xxx.xxx-x"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: xxxx"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad: xx"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvValidoHasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Válido hasta: dd/mm/yyyy"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btSuscripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="⭐ Suscripción gratuita"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:text="✔ Confirmar" />
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="✖ Cancelar" />
+    </LinearLayout>
+</LinearLayout>
