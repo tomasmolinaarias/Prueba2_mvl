@@ -4,8 +4,8 @@
     android:id="@+id/main"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".Resultados">
+    android:padding="16dp">
+
 
     <TextView
         android:id="@+id/tvRut"
