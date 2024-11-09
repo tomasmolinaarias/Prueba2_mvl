@@ -28,4 +28,7 @@
     <string name="error_edad_invalida">Invalid age. Check the date of birth.</string>
     <string name="error_menor_edad">You must be over 18 years old.</string>
     <string name="error_fecha_formato">Incorrect date format. Use dd/MM/yyyy.</string>
+    <!--terminos y condiciones -->
+    <string name="texto_terminos">The collection and use of your personal information are governed by our Privacy Policy, which is an integral part of these Terms and Conditions. We recommend reading our Privacy Policy to understand how we collect, use, share, and protect your personal information, as well as your rights regarding this information.</string>
+    <string name="btn_cerrarTC">✖ Close</string>
 </resources>

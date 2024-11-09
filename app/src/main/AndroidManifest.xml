@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Prueba2"
         tools:targetApi="31">
         <activity
+            android:name=".terminos_condiciones"
+            android:exported="false" />
+        <activity
             android:name=".Resultados"
             android:exported="false" />
         <activity

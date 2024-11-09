@@ -28,4 +28,8 @@
     <string name="error_edad_invalida">Edad inválida. Verifica la fecha de nacimiento.</string>
     <string name="error_fecha_formato">Formato de fecha incorrecto. Usa dd/MM/yyyy.</string>
     <string name="error_menor_edad">Debes ser mayor de 18 años.</string>
+    <!-- terminosycondiciones -->
+    <string name="texto_terminos">La recopilación y el uso de tu información personal están regidos por nuestra Política de Privacidad, la cual forma parte integral de estos Términos y Condiciones. Te recomendamos leer nuestra Política de Privacidad para comprender cómo recolectamos, usamos, compartimos y protegemos tu información personal, así como tus derechos en relación a dicha información.</string>
+    <string name="btn_cerrarTC">Cerrar</string>
+
 </resources>
