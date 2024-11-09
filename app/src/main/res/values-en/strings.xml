@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prueba2</string>
+    <!-- Labels and hints -->
+    <string name="hint_rut">DNI</string>
+    <string name="hint_nombre">Name</string>
+    <string name="hint_apellido">Last Name</string>
+    <string name="hint_fecha_nacimiento">Date of Birth</string>
+    <string name="ver_terminos">View terms and conditions</string>
+
+    <!-- Button texts -->
+    <string name="btn_enviar">Submit Form</string>
+    <string name="btn_cerrar">✖ Close</string>
+
+    <!-- Error messages -->
+    <string name="error_rut">Please enter the DNI</string>
+    <string name="error_nombre">Please enter the name</string>
+    <string name="error_apellido">Please enter the last name</string>
+    <string name="error_fecha">Please enter the date of birth</string>
+    <string name="error_edad_invalida">Invalid age. Check the date of birth.</string>
+    <string name="error_menor_edad">You must be over 18 years old.</string>
+    <string name="error_fecha_formato">Incorrect date format. Use dd/MM/yyyy.</string>
+</resources>

@@ -8,38 +8,39 @@
     android:padding="16dp"
     tools:context=".MainActivity" >
 
+    <!-- Rut: solo números -->
     <EditText
         android:id="@+id/etRut"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:maxLength="9"
-        android:hint="Rut"/>
+        android:hint="@string/hint_rut"/>
 
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Nombre" />
+        android:inputType="textPersonName"
+        android:hint="@string/hint_nombre" />
 
     <EditText
         android:id="@+id/etApellido"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Apellido" />
+        android:inputType="textPersonName"
+        android:hint="@string/hint_apellido" />
 
     <EditText
         android:id="@+id/etFecha"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="date"
-        android:hint="Fecha nacimiento"/>
+        android:hint="@string/hint_fecha_nacimiento"/>
 
     <TextView
         android:id="@+id/tvTerminos"
@@ -47,33 +48,33 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="Ver términos y condiciones"
+        android:text="@string/ver_terminos"
         android:textColor="#0000FF" />
 
+    <!-- Botones de acción -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="24dp"
-        android:layout_gravity="start">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnEnviar"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_weight="1"
             android:background="@color/white"
-            android:text="Enviar formulario" />
+            android:text="@string/btn_enviar" />
 
         <Button
             android:id="@+id/btnCerrar"
-            android:layout_width="168dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@color/white"
-            android:text="✖ Cerrar" />
+            android:text="@string/btn_cerrar" />
     </LinearLayout>
 
 </LinearLayout>

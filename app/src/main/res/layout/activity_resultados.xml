@@ -1,68 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-
-    <TextView
-        android:id="@+id/tvRut"
+    <!-- Sección de Rut -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rut: xx.xxx.xxx-x"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvNombre"
+        <TextView
+            android:id="@+id/tvMensajeRut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rut:"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx.xxx.xxx-x"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Sección de Nombre -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre: xxxx"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
-    <TextView
-        android:id="@+id/tvEdad"
+        <TextView
+            android:id="@+id/tvMensajeNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxx"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Sección de Edad -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edad: xx"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
-    <TextView
-        android:id="@+id/tvValidoHasta"
+        <TextView
+            android:id="@+id/tvMensajeEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad:"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Sección de Validez -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Válido hasta: dd/mm/yyyy"
-        android:layout_marginBottom="16dp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
+        <TextView
+            android:id="@+id/tvMensajeValidoHasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Válido hasta:"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvValidoHasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd/mm/yyyy"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Botón de Suscripción -->
     <Button
         android:id="@+id/btSuscripcion"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:text="⭐ Suscripción gratuita"
-        android:layout_gravity="center"
-        android:layout_marginBottom="24dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/white" />
 
+    <!-- Botones Confirmar y Cancelar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:layout_marginTop="50dp">
 
         <Button
             android:id="@+id/btConfirmar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:background="@color/white"
-            android:text="✔ Confirmar" />
+            android:layout_weight="1"
+            android:text="✔ Confirmar"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white" />
 
         <Button
             android:id="@+id/btCancelar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="✖ Cancelar" />
+            android:layout_weight="1"
+            android:text="✖ Cancelar"
+            android:layout_marginStart="10dp"
+            android:background="@color/white" />
     </LinearLayout>
+
 </LinearLayout>

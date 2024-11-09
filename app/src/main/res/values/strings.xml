@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Prueba2</string>
+    <!-- Labels and hints -->
+    <string name="hint_rut">Rut</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="ver_terminos">Ver términos y condiciones</string>
+
+    <!-- Button texts -->
+    <string name="btn_enviar">Enviar formulario</string>
+    <string name="btn_cerrar">✖ Cerrar</string>
+
+    <!-- Error messages -->
+    <string name="error_rut">Debe ingresar el rut</string>
+    <string name="error_nombre">Debe ingresar el nombre</string>
+    <string name="error_apellido">Debe ingresar el apellido</string>
+    <string name="error_fecha">Debe ingresar la fecha de nacimiento</string>
+    <string name="error_edad_invalida">Edad inválida. Verifica la fecha de nacimiento.</string>
+    <string name="error_fecha_formato">Formato de fecha incorrecto. Usa dd/MM/yyyy.</string>
+    <string name="error_menor_edad">Debes ser mayor de 18 años.</string>
 </resources>
