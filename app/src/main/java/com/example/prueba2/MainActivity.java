@@ -93,11 +93,9 @@ public class MainActivity extends AppCompatActivity {
         Date dateOfBirth = null;
 
         try {
-            // Intentar parsear usando el primer formato (dd-MM-yyyy)
             dateOfBirth = sdf1.parse(fechaNac);
         } catch (ParseException e) {
             try {
-                // Intentar parsear usando el segundo formato (dd/MM/yyyy) si falla el primero
                 dateOfBirth = sdf2.parse(fechaNac);
             } catch (ParseException ex) {
                 // Si ambos formatos fallan, muestra un mensaje de error y regresa
