@@ -17,7 +17,7 @@
             android:id="@+id/tvMensajeRut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rut:"
+            android:text="@string/label_rut"
             android:layout_weight="1"
             android:textSize="16sp" />
 
@@ -42,7 +42,7 @@
             android:id="@+id/tvMensajeNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre:"
+            android:text="@string/label_nombre"
             android:layout_weight="1"
             android:textSize="16sp" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/tvMensajeEdad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edad:"
+            android:text="@string/label_edad"
             android:layout_weight="1"
             android:textSize="16sp" />
 
@@ -92,7 +92,7 @@
             android:id="@+id/tvMensajeValidoHasta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Válido hasta:"
+            android:text="@string/label_valido_hasta"
             android:layout_weight="1"
             android:textSize="16sp" />
 
@@ -124,20 +124,20 @@
         android:layout_marginTop="50dp">
 
         <Button
-            android:id="@+id/btConfirmar"
+            android:id="@+id/btnConfirmar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="✔ Confirmar"
+            android:text="@string/btn_confirmar"
             android:layout_marginEnd="10dp"
             android:background="@color/white" />
 
         <Button
-            android:id="@+id/btCancelar"
+            android:id="@+id/btnCancelar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="✖ Cancelar"
+            android:text="@string/btn_cancelar"
             android:layout_marginStart="10dp"
             android:background="@color/white" />
     </LinearLayout>

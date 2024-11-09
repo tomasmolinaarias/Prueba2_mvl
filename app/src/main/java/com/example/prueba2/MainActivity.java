@@ -33,8 +33,21 @@ public class MainActivity extends AppCompatActivity {
                 enviarDatos(); // Enviar los datos
             }
         });
+        btnCerrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        limpiarCampos();
     }
 
+
+    // referencias
     private void referencias(){
         etRut = findViewById(R.id.etRut);
         etNombre = findViewById(R.id.etNombre);
@@ -43,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         btnEnviar = findViewById(R.id.btnEnviar);
         btnCerrar = findViewById(R.id.btnCerrar);
     }
-
     // Validación de campos vacíos
     private void validarCamposVacios(){
         if (etRut.getText().toString().isEmpty()) {
@@ -105,5 +117,12 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("fechaNacimiento", etFecha.getText().toString());
         intent.putExtra("edad", edad); // Enviar la edad calculada
         startActivity(intent);
+    }
+    // Método para limpiar los campos EditText
+    private void limpiarCampos() {
+        etRut.setText("");
+        etNombre.setText("");
+        etApellido.setText("");
+        etFecha.setText("");
     }
 }
