@@ -16,7 +16,7 @@ public class terminos_condiciones extends AppCompatActivity {
         btn_cerrarTC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Cierra esta actividad y regresa a la anterior
+                finish();
             }
         });
     }

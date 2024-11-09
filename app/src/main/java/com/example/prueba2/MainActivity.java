@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etRut, etNombre, etApellido, etFecha;
     private Button btnEnviar, btnCerrar;
     private TextView tvTerminos;
-    private int edad = -1; // Declarar la variable de clase para almacenar la edad
-
+    private int edad = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +32,12 @@ public class MainActivity extends AppCompatActivity {
                 validarCamposVacios();
                 String fechaNac = etFecha.getText().toString();
                 validarFechaNacimiento(fechaNac);
-                enviarDatos(); // Enviar los datos
+                if (etRut.getError() == null
+                        && etNombre.getError() == null
+                        &&  etApellido.getError() == null &&
+                        etFecha.getError() == null) {
+                    enviarDatos();
+                }
             }
         });
         btnCerrar.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
             etFecha.setError(getString(R.string.error_fecha));
         }
     }
-
     // Validación de la fecha de nacimiento
     private void validarFechaNacimiento(String fechaNac) {
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
@@ -98,35 +101,28 @@ public class MainActivity extends AppCompatActivity {
             try {
                 dateOfBirth = sdf2.parse(fechaNac);
             } catch (ParseException ex) {
-                // Si ambos formatos fallan, muestra un mensaje de error y regresa
                 etFecha.setError(getString(R.string.error_fecha_formato));
                 return;
             }
         }
-
-        // Proceder con el cálculo de edad si se parseó correctamente la fecha
         Calendar dob = Calendar.getInstance();
         Calendar today = Calendar.getInstance();
         dob.setTime(dateOfBirth);
 
         int age = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);
 
-        // Ajuste para calcular la edad correcta
         if (today.get(Calendar.DAY_OF_YEAR) < dob.get(Calendar.DAY_OF_YEAR)) {
             age--;
         }
 
-        // Asignar la edad calculada a la variable edad
         edad = age;
 
-        // Log para mostrar la edad calculada
         Log.d("EdadCalculada", "Edad: " + edad);
 
-        // Verificación de rango de edad
         if (edad < 0 || edad > 150) {
             etFecha.setError(getString(R.string.error_edad_invalida));
         }
-        // Validar que la edad sea al menos 18 años
+
         else if (edad < 18) {
             etFecha.setError(getString(R.string.error_menor_edad));
         }
